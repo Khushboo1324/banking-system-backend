@@ -11,7 +11,7 @@ spring:
     name: Banking-System
     data:
       mongodb:
-        uri: ${MONGODB_URI}
+        uri: mongodb://localhost:27017/DigitalBank
         host: localhost
         port: 27017
         database: banking_db
@@ -19,7 +19,7 @@ spring:
 server:
   port: 8080
 jwt:
-  secret: 234567890ytrdcvbvcxsw23456789iok
+  secret: 234567890ytrdcvbvcxsw23456789iok1234567890qwertyuioasdfghjkzxcvbnm
   expiration: 86400000
 
 logging:

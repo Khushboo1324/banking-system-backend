@@ -17,7 +17,7 @@ public class AuthService {
 
     public User register(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRole(Role.CUSTOMER);
+        user.setRole(Role.USER);
         return userRepository.save(user);
     }
 
